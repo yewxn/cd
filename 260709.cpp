@@ -1,44 +1,256 @@
-// ìˆ™ì œ
+//#include <cstdio>
+//void main()
+//{
+//	int a[5][5] = {};
+//	int num = 1;
+//	int y = 0, x = -1;
+//	int count = 5;
+//	int one = 1;
+//
+//	while (1)
+//	{
+//		for (int i = 0; i < count; i++) {
+//			x += one;
+//			a[y][x] = num;
+//			num++;
+//		}
+//		count--;
+//		if (count == 0)
+//			break;
+//		for (int i = 0; i < count; i++) {
+//			y += one;
+//			a[y][x] = num;
+//			num++;
+//		}
+//		//one = -one;
+//		one *= -1;
+//	}
+//
+//	for (int i = 0; i < count; i++) {
+//		x++;
+//		a[y][x] = num;
+//		num++;
+//	}
+//
+//	for (int i = 0; i < 5; i++) {
+//		for (int j = 0; j < 5; j++) {
+//			printf("%2d  ", a[i][j]);
+//		}
+//		printf("\n");
+//	}
+//}
 
-#include <cstdio>
-void main()
-{
-	int a[5][5] = {};
-	int num = 1;
-	int y = 0, x = -1;
-	int count = 5;
-	int one = 1;
+//#include <iostream>
+//using namespace std;
+//void hello()
+//{
+//	cout << "¾È³çÇÏ¼¼¿ä!";
+//}
+//int main()
+//{
+//	hello();
+//	hello();
+//	return 0;
+//}
 
-	while (1)
-	{
-		for (int i = 0; i < count; i++) {
-			x += one;
-			a[y][x] = num;
-			num++;
-		}
-		count--;
-		if (count == 0)
-			break;
-		for (int i = 0; i < count; i++) {
-			y += one;
-			a[y][x] = num;
-			num++;
-		}
-		if (one == 1)
-			one -= 2;
-		else one += 2;
-	}
+//#include <iostream>
+//using namespace std;
+//void function_test1()
+//{
+//	cout << "function_test1()" << endl;
+//	cout << "ÇÔ¼ö ¾È¿¡¼­ ½ÇÇà" << endl;
+//}
+//void main()
+//{
+//	cout << "½ÇÇà Àü" << endl;
+//	function_test1();
+//	cout << "½ÇÇà ÈÄ" << endl;
+//}
 
-	for (int i = 0; i < count; i++) {
-		x++;
-		a[y][x] = num;
-		num++;
-	}
+//#include <iostream>
+//#include <cstdlib>
+//#include <ctime>
+//using namespace std;
+//
+//void eatFood()
+//{
+//	string contents = "¹ä¸Ô±â";
+//	cout << contents << endl;
+//}
+//void goSleep()
+//{
+//	string contents = "ÀáÀÚ±â";
+//	cout << contents << endl;
+//}
+//void main()
+//{
+//	srand((unsigned int)time(NULL));
+//	for (int i = 0; i < 6; i++)
+//	{
+//		if (rand() % 2 == 0) {
+//			eatFood();
+//		}
+//		else {
+//			goSleep();
+//		}
+//	}
+//}
 
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 5; j++) {
-			printf("%2d  ", a[i][j]);
-		}
-		printf("\n");
-	}
-}
+//#include <iostream>
+//#include <cstdlib>
+//#include <ctime>
+//using namespace std;
+//
+//void study()
+//{
+//	string contents = "°øºÎÇÏ±â";
+//	cout << contents << endl;
+//}
+//void play()
+//{
+//	string con = "ÇÚµåÆù º¸±â";
+//	cout << con << endl;
+//}
+//int main()
+//{
+//	int n = 0;
+//
+//	srand((unsigned int)time(NULL));
+//	cout << "¸î½Ã°£ °øºÎÇÒ±î? -> ";
+//	cin >> n;
+//	printf("\n");
+//	for (int time_ = 1; time_<=n; time_++)
+//	{
+//		printf("%d½Ã°£Â°¿¡ ÇÑ °Í : ", time_);
+//		if (rand() % 2 == 1)
+//			study();
+//		else play();
+//	}
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//void greet(string name)
+//{
+//	cout << "¾È³ç, " << name << "!" << endl;
+//}
+//void main()
+//{
+//	greet("ÀÌ»ù");
+//	greet("ÄÚµù");
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//void person_pocket(char who, int money)
+//{
+//	cout << who << "ÀÇ ÁÖ¸Ó´Ï¿¡ ";
+//	cout << money << "¿ø\n";
+//}
+//void main()
+//{
+//	person_pocket('A', 10000);
+//	person_pocket('B', 5000);
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//void print_Number()
+//{
+//	cout << "Number" << endl;
+//}
+//void print_Number2(int num)
+//{
+//	cout << "Number :" << num << endl;
+//}
+//void print_Number4_charB(int num, char b)
+//// (char b, int num)
+//{
+//	printf("Number :%d, character :%c\n", num, b);
+//}
+//void print_characterX(char X)
+//{
+//	cout << "character :" << X << endl;
+//}
+//void main()
+//{
+//	print_Number();
+//	print_Number2(2);
+//	print_Number4_charB(4, 'b');
+//	print_characterX('X');
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//void coffee(string name)
+//{
+//
+//	cout << endl;
+//	cout << name << "Ä¿ÇÇ" << endl;
+//}
+//void main()
+//{
+//	string name;
+//	printf("¹«½¼ Ä¿ÇÇ¸¦ µå½Ã°Ú½À´Ï±î?\n-> ");
+//	cin >> name;
+//	coffee(name);
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//char getB() { 
+//	return 'B'; 
+//}
+//char getE() { 
+//	return 'E'; 
+//}
+//int main()
+//{
+//	cout << "¹úÀ» ¿µ¾î·Î?" << endl;
+//	cout << getB() << getE() << getE() << endl;
+//	return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int function_test2()
+//{
+//	int testNumber = 5;
+//	return testNumber;
+//}
+//void main()
+//{
+//	int getNumber = function_test2();
+//	cout << "function_test2()¿¡¼­ ";
+//	cout << "°¡Á®¿Â °ª : " << getNumber;
+//}
+
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <iostream>
+//using namespace std;
+//
+//float sendCard()
+//{
+//	cout << "<Å©¸®½º¸¶½º Ä«µå>" << endl;
+//	cout << "ºñ¿ë: 0.7¸¸¿ø" << endl;
+//	cout << "ÁöºÒÇÏ±â(´ÜÀ§:¸¸¿ø) : ";
+//
+//	int manwon;
+//	scanf("%d", &manwon);
+//	float change = manwon - 0.7;
+//	return change;
+//}
+//
+//int main()
+//{
+//	float result = sendCard();
+//	cout << result << "¸¸¿ø ¹ÞÀ½" << endl;
+//	return 0;
+//}
+
